@@ -1,0 +1,19 @@
+<%- include('../partials/blogHeader.ejs')-%>
+<h1 style="font-size: 3rem; font-weight: bolder;">Home</h1>
+
+<div class="home-content-div">
+    <p class="home-content"> <%= startingContent %></p>
+</div>
+
+<br><br>
+    <% posts.forEach(function(post){ %>
+        <div class="post">
+        <h1 class="post-title"><%= post.title%> </h1>
+        <p class="post-body">
+            <%= post.content.substring(0,100) + "..." %> <a href="blog/posts/<%=post._id%>" class="read-more">Read More</a>
+        </p>
+        </div>
+    <% }) %>
+
+
+<%- include('../partials/blogFooter.ejs'); -%>

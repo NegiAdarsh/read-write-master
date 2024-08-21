@@ -1,0 +1,12 @@
+<%- include("../partials/blogHeader")-%>
+<h1>Compose Your post</h1>
+<form action="/blog/compose" method="post">
+    <div class="form-group">
+        <label>Title</label>
+        <textarea name="postTitle" class="form-control" cols="160"  autocomplete="off" placeholder="Post Title" autofocus></textarea>
+        <label>Post</label>
+        <textarea name="postBody"  class="form-control" cols="160" rows="8" autocomplete="off" placeholder="Post Body"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" name="button">Publish </button>
+</form>
+<%-include("../partials/blogFooter")-%>
