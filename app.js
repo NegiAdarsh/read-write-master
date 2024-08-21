@@ -54,7 +54,7 @@ const postSchema = {
 const Post = blogDB.model("Post", postSchema);
 
 // Content for various pages
-const homeStartingContent = `Dive into a world where words dance off the page and ideas come to life...`;
+const homeStartingContent = `Welcome to Your Creative Haven! Dive into a world where your thoughts flow freely—no sign-ins, no barriers. Whether you're a seasoned writer or just have something on your mind, our platform lets you share your ideas effortlessly. Just start writing and let your words reach the world! Click on read more.. to read full post`;
 const aboutContent = `At Read and Write, we believe in the power of storytelling...`;
 const contactContent = "Our contact page is the best way to get in touch with us...";
 
