@@ -25,8 +25,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Database connections
-const userDBLink = "mongodb+srv://admin-adarsh:Test1234@cluster0.wwpveqz.mongodb.net/userDB";
-const blogDBLink = "mongodb+srv://admin-adarsh:Test1234@cluster0.td7yxdq.mongodb.net/blogDB";
+
+// Database connections using environment variables
+const userDBLink = process.env.USER_DB_LINK;
+const blogDBLink = process.env.BLOG_DB_LINK;
+
 
 const userDB = mongoose.createConnection(userDBLink, { useNewUrlParser: true, useUnifiedTopology: true });
 const blogDB = mongoose.createConnection(blogDBLink, { useNewUrlParser: true, useUnifiedTopology: true });
